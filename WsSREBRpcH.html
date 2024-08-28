@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://paphos.quest/src/output.css" rel="stylesheet">
+</head>
+
+<body>
+	<main class="bg-slate-200">
+		<div class="grid h-screen place-items-center">
+			<p class="mx-10 text-slate-900">
+Надеюсь, вы уже на месте. Торопитесь (сей музеон закроет свои врата в 16 часов)! Чтобы быть уверенным, что вы избранные, способные мне помочь, вам нужно пройти небольшую проверку. Именно за этим я вас сюда и притащил. Ой, пригласил. Если вы в правильном месте, то у входа в здание легко найти именной объект цилиндрической формы. Имя и фамилия на нем созвучны такой форме государственного правления:			</p>
+			<input type="text" onkeypress="clickPress(event)" id="fname" name="fname" class="p-2 rounded-lg mb-10 placeholder:italic" placeholder="************">
+		</div>
+	</main>
+</body>
+
+<script type="text/javascript">
+	function clickPress(event) {
+    	if (event.key == "Enter") {
+			if (document.getElementById("fname").value.toUpperCase() == "АРИСТОКРАТИЯ") {
+        		location.href = "https://paphos.quest/oBAYbxjUQG.html";
+			}
+    	}
+	}
+</script>

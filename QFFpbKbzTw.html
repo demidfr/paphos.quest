@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://paphos.quest/src/output.css" rel="stylesheet">
+</head>
+
+<body>
+	<main class="bg-slate-200">
+		<div class="grid h-screen place-items-center">
+			<p class="mx-10 text-slate-900">
+Нам в этой витрине не очень-то повезло. От кого-то осталась только голова, а у кого-то тело без головы. Правда есть одно рельефное изображение. Кстати, узнаете бога в образе орла?			</p>
+			<input type="text" onkeypress="clickPress(event)" id="fname" name="fname" class="p-2 rounded-lg mb-10 placeholder:italic" placeholder="****">
+		</div>
+	</main>
+</body>
+
+<script type="text/javascript">
+	function clickPress(event) {
+    	if (event.key == "Enter") {
+			if (document.getElementById("fname").value.toUpperCase() == "ЗЕВС") {
+        		location.href = "https://paphos.quest/lHAOWEivIf.html";
+			}
+    	}
+	}
+</script>
