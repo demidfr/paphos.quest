@@ -11,17 +11,16 @@
 		<div class="grid h-screen place-items-center">
 			<p class="mx-10 text-slate-900">
 Знаю-знаю. Это быдо слишком просто. Тогда еще вопрос: какое созвездие названо в честь Ганимеда?			</p>
-			<input type="text" onkeypress="clickPress(event)" id="fname" name="fname" class="p-2 rounded-lg mb-10 placeholder:italic" placeholder="*******">
+			<input type="text" id="fname" name="fname" class="p-2 rounded-lg mb-10 placeholder:italic" placeholder="*******">
+			<button class="rounded-full bg-slate-800 text-slate-200 h-8 w-60" onclick="clickPress(event)">OK</button>
 		</div>
 	</main>
 </body>
 
 <script type="text/javascript">
 	function clickPress(event) {
-    	if (event.key == "Enter") {
-			if (document.getElementById("fname").value.toUpperCase() == "ВОДОЛЕЙ") {
-        		location.href = "https://paphos.quest/afyMMgAUJq.html";
-			}
-    	}
+		if (document.getElementById("fname").value.toUpperCase() == "ВОДОЛЕЙ") {
+       		location.href = "https://paphos.quest/afyMMgAUJq.html";
+		}
 	}
 </script>

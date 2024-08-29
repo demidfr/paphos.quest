@@ -17,17 +17,16 @@
 			<p>
 			Введите мой номер
 			</p>
-			<input type="text" onkeypress="clickPress(event)" id="fname" name="fname" class="p-2 rounded-lg mb-10 placeholder:italic" placeholder="*">
+			<input type="text" id="fname" name="fname" class="p-2 rounded-lg mb-10 placeholder:italic" placeholder="*">
+			<button class="rounded-full bg-slate-800 text-slate-200 h-8 w-60" onclick="clickPress(event)">OK</button>
 		</div>
 	</main>
 </body>
 
 <script type="text/javascript">
 	function clickPress(event) {
-    	if (event.key == "Enter") {
-			if (document.getElementById("fname").value == "8") {
-        		location.href = "https://paphos.quest/QFFpbKbzTw.html";
-			}
-    	}
+		if (document.getElementById("fname").value == "8") {
+       		location.href = "https://paphos.quest/QFFpbKbzTw.html";
+		}
 	}
 </script>
