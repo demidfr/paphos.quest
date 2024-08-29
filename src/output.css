@@ -608,6 +608,10 @@ video {
   height: 4rem;
 }
 
+.h-36 {
+  height: 9rem;
+}
+
 .w-60 {
   width: 15rem;
 }
