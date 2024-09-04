@@ -1,4 +1,4 @@
-
+-- ADD HINT
 <!DOCTYPE html>
 <head>
 	<meta charset="UTF-8">
@@ -11,6 +11,8 @@
 		<div class="grid h-screen place-items-center">
 			<p class="mx-10 text-slate-900">
 Еще одному парню из нашей витрины повезло больше остальных. Что у нас с ним общего, кроме начала имени?			</p>
+			<button class="rounded-full bg-slate-700 text-slate-200 h-7 w-56" onclick="clickPress2(event)" id="hintbutton">Подсказка:</button>
+			<div id="hintdiv" class="mx-10 text-slate-900"></div>
 			<input type="text" id="fname" name="fname" class="p-2 rounded-lg mb-10 placeholder:italic" placeholder="******">
 			<button class="rounded-full bg-slate-800 text-slate-200 h-8 w-60" onclick="clickPress(event)">OK</button>
 		</div>
@@ -22,5 +24,12 @@
 		if (document.getElementById("fname").value.toUpperCase().replace(/\s/g, "") == "БОРОДА") {
        		location.href = "https://paphos.quest/zdCRUEwSfE.html";
 		}
+	}
+	function clickPress2(event) {
+		const element = document.getElementById("hintbutton");
+		element.remove(); 
+		const para = document.createElement("p");
+		para.innerText = "Внешность";
+		document.getElementById("hintdiv").appendChild(para)
 	}
 </script>
